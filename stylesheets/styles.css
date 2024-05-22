@@ -1,0 +1,136 @@
+html {
+    height: 100%;
+    background: linear-gradient(rgb(62, 212, 212), rgb(178, 243, 159));
+    background-attachment: fixed;
+}
+
+.signup,
+.login {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+header {
+    border-bottom: 2px solid #727272a9;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #009297;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0a9fb3;
+}
+
+p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+a, .welcomeNav {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 12px;
+    color: inherit;
+    text-decoration: none;
+}
+
+a::before, a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #009297;
+    transition: width 0.3s ease;
+}
+
+a::before {
+    top: 0;
+    left: 0;
+}
+
+a::after {
+    bottom: 0;
+    right: 0;
+}
+
+a:hover::before, a:hover::after {
+    width: 100%;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #009297;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.backHome {
+    position: block;
+    text-align: center;
+}
+
+.feedback-container {
+ position: relative;
+}
+
+.feedback-text {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding-bottom: 20px;
+    resize: none;
+}
